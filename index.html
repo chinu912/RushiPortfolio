@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <title>Welcome to My World</title>
+</head>
+
+<body>
+  <style>
+    body {
+      background-color: black;
+    }
+
+    .flip-card {
+      margin: 0 auto;
+      width: 300px;
+      height: 250px;
+      perspective: 1000px;
+    }
+
+    /* Container for position the front and back side */
+    .flip-card-inner1 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 #141c3a;
+      border-radius: 12px;
+    }
+
+    /* rotateY do an horizontal flip when you move the mouse over the flip box container. */
+    .flip-card:hover .flip-card-inner1 {
+      transform: rotateY(-180deg);
+    }
+
+    /* Position the front and back side */
+    .flip-card-front1,
+    .flip-card-back1 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: 12px;
+    }
+
+    /* Style the front side */
+    .flip-card-front1 {
+      background-image: url("https://bernardmarr.com/wp-content/uploads/2021/08/Should-I-Choose-Machine-Learning-or-Big-Data.jpg");
+      background-size: cover;
+      text-align: left;
+    }
+
+    .flip-card-front1 p {
+      margin-left: 5px;
+      margin-top: 0px;
+      font-size: 1.5rem;
+      color: #141c3a;
+      width: 60%;
+    }
+
+    /* Style the back side */
+    .flip-card-back1 {
+      text-align: center;
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-inner2 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 #141c3a;
+      border-radius: 12px;
+    }
+
+    /* rotateY do an horizontal flip when you move the mouse over the flip box container. */
+    .flip-card:hover .flip-card-inner2 {
+      transform: rotateY(-180deg);
+    }
+
+    /* Position the front and back side */
+    .flip-card-front2,
+    .flip-card-back2 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: 12px;
+    }
+
+    /* Style the front side */
+    .flip-card-front2 {
+      background-image: url("https://princetoninternetmarketing.com/wp-content/uploads/2015/07/web_developer_wallpaper__code__by_plusjack-d7bmt54.jpg");
+      background-size: cover;
+      text-align: left;
+    }
+
+    .flip-card-front2 p {
+      margin-left: 5px;
+      margin-top: 0px;
+      font-size: 1.5rem;
+      color: #141c3a;
+      width: 60%;
+    }
+
+    /* Style the back side */
+    .flip-card-back2 {
+      text-align: center;
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-inner3 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 #141c3a;
+      border-radius: 12px;
+    }
+
+    /* rotateY do an horizontal flip when you move the mouse over the flip box container. */
+    .flip-card:hover .flip-card-inner3 {
+      transform: rotateY(-180deg);
+    }
+
+    /* Position the front and back side */
+    .flip-card-front3,
+    .flip-card-back3 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: 12px;
+    }
+
+    /* Style the front side */
+    .flip-card-front3 {
+      background-image: url("https://tdatg.com/wp-content/uploads/2021/08/salesforce.png");
+      background-size: cover;
+      text-align: left;
+    }
+
+    .flip-card-front3 p {
+      margin-left: 5px;
+      margin-top: 0px;
+      font-size: 1.5rem;
+      color: #141c3a;
+      width: 60%;
+    }
+
+    /* Style the back side */
+    .flip-card-back3 {
+      text-align: center;
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-inner4 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 #141c3a;
+      border-radius: 12px;
+    }
+
+    /* rotateY do an horizontal flip when you move the mouse over the flip box container. */
+    .flip-card:hover .flip-card-inner4 {
+      transform: rotateY(-180deg);
+    }
+
+    /* Position the front and back side */
+    .flip-card-front4,
+    .flip-card-back4 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: 12px;
+    }
+
+    /* Style the front side */
+    .flip-card-front4 {
+      background-image: url("https://www.mindinventory.com/blog/wp-content/uploads/2019/06/python-developer.png");
+      background-size: cover;
+      text-align: left;
+    }
+
+    .flip-card-front4 p {
+      margin-left: 5px;
+      margin-top: 0px;
+      font-size: 1.5rem;
+      color: #141c3a;
+      width: 60%;
+    }
+
+    /* Style the back side */
+    .flip-card-back4 {
+      text-align: center;
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      transform: rotateY(180deg);
+    }
+
+
+    .ul {
+      list-style-type: none;
+      margin: 0;
+      text-align: center;
+      padding: 0;
+      line-height: 10px;
+      font-size: 100px;
+    }
+
+    .li {
+      display: inline;
+      font-size: 1px;
+
+
+    }
+
+    .a {
+      font-size: 18px;
+      text-decoration: none;
+      color: #fff;
+      padding: 0 6px;
+      border-bottom: 0px solid #fff;
+      border-top: 0px solid #fff;
+      -webkit-transition: all 2s ease-in-out;
+      -moz-transition: all 2s ease-in-out;
+      -o-transition: all 2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .a:hover {
+      color: #E8CD26;
+      border-bottom: 2px solid #E8CD26;
+      border-top: 2px solid #E8CD26;
+      padding: 6px;
+    }
+
+    #small-screen-nav {
+      position: fixed;
+      width: 90%;
+      margin: 5% 5%;
+      border-radius: 14px;
+      height: 90%;
+      background: rgba(3, 3, 5, 0.9);
+      z-index: 9;
+      box-shadow: 3px 3px 30px #000;
+      display: none;
+    }
+
+    #nav-icon {
+      position: absolute;
+      top: 24px;
+      left: -15px;
+      margin-left: 50%;
+      width: 30px;
+      height: 30px;
+      background: url(http://www.alfageo.eu/site/img/nav.png) no-repeat;
+      background-size: 100%;
+      display: none;
+    }
+
+    #close {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      width: 30px;
+      height: 30px;
+      background: url(http://icons.iconarchive.com/icons/graphicloads/100-flat/256/close-icon.png) no-repeat;
+      background-size: 100%;
+      cursor: pointer;
+      -webkit-transition: all 2s ease-in-out;
+      -moz-transition: all 2s ease-in-out;
+      -o-transition: all 2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+
+    #close:hover {
+      top: -12px;
+      right: -12px;
+      width: 34px;
+      height: 34px;
+    }
+
+    .a {
+      font-size: 18px;
+      text-decoration: none;
+      color: #fff;
+      padding: 0 6px;
+      border-bottom: 0px solid #fff;
+      border-top: 0px solid #fff;
+      -webkit-transition: all 2s ease-in-out;
+      -moz-transition: all 2s ease-in-out;
+      -o-transition: all 2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .a:hover {
+      color: #E8CD26;
+      border-bottom: 2px solid #E8CD26;
+      border-top: 2px solid #E8CD26;
+      padding: 6px;
+    }
+
+    #small-screen-nav {
+      position: fixed;
+      width: 90%;
+      margin: 5% 5%;
+      border-radius: 14px;
+      height: 90%;
+      background: rgba(18, 18, 18, 0.9);
+      z-index: 9;
+      box-shadow: 3px 3px 30px #000;
+      display: none;
+    }
+
+    #nav-icon {
+      position: absolute;
+      top: 24px;
+      left: -15px;
+      margin-left: 50%;
+      width: 30px;
+      height: 30px;
+      background: url(http://www.alfageo.eu/site/img/nav.png) no-repeat;
+      background-size: 100%;
+      display: none;
+    }
+
+    #close {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      width: 30px;
+      height: 30px;
+      background: url(http://icons.iconarchive.com/icons/graphicloads/100-flat/256/close-icon.png) no-repeat;
+      background-size: 100%;
+      cursor: pointer;
+      -webkit-transition: all 2s ease-in-out;
+      -moz-transition: all 2s ease-in-out;
+      -o-transition: all 2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+
+    #close:hover {
+      top: -12px;
+      right: -12px;
+      width: 34px;
+      height: 34px;
+    }
+
+    .h5 {
+      font-weight: 200;
+      text-align: center;
+      font-family: Poppins, sans-serif;
+      font-size: 1.4em;
+      color: rgb(255, 255, 255);
+      padding: 0;
+      line-height: 0.8em !important;
+      text-transform: none;
+    }
+
+    .h5 span {
+      color: aqua;
+      animation-delay: 1s;
+    }
+
+    .div {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      color: white;
+      font-size: 300%;
+    }
+
+    .div:first-of-type {
+      animation: showup 7s infinite;
+    }
+
+    @keyframes showup {
+      0% {
+        opacity: 0;
+      }
+
+      20% {
+        opacity: 1;
+      }
+
+      80% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes slidein {
+      0% {
+        margin-left: -295px;
+      }
+
+      20% {
+        margin-left: -295px;
+      }
+
+      30% {
+        margin-left: 0px;
+      }
+
+      100% {
+        margin-left: 0px;
+      }
+    }
+
+    @keyframes reveal {
+      0% {
+        opacity: 0;
+        width: 0px;
+      }
+
+      10% {
+        opacity: 1;
+        width: 0px;
+      }
+
+      30% {
+        width: 695px;
+      }
+
+      80% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+        width: 255px;
+      }
+    }
+
+    .event {
+
+      margin-bottom: 20px;
+      position: relative;
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      width: 300px;
+    }
+
+    .event .content {
+      background: rgb(49, 184, 132);
+      color: #fff;
+      bottom: 0;
+      height: 68px;
+      left: 0;
+      overflow: hidden;
+      position: absolute;
+      transition: all .5s ease;
+      width: 100%;
+    }
+
+    .event h3 {
+      font: bold 1em/1.125em 'Montserrat', Arial, Helvetica, sans-serif;
+      letter-spacing: 2px;
+      height: 68px;
+      margin: 0;
+      padding-top: 20px;
+      text-transform: uppercase;
+    }
+
+    .event .rollover {
+      border-top: 1px solid #59E4DF;
+      font-size: .9375em;
+      line-height: 1.4em;
+      padding: 18px 20px;
+      opacity: 0;
+      transition: all .5s ease;
+    }
+
+    .event .rollover p {
+      margin: 0;
+      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    }
+
+    .event:hover .content {
+      background: rgba(251, 234, 209, 0.7);
+      height: 100%;
+    }
+
+    .event:hover .rollover {
+      opacity: 1;
+    }
+    .profile {
+    background-color: rgb(49, 184, 132);
+    border-radius: 8px;
+    height: 180px;
+    width: 350px;
+    position: relative;
+    overflow: hidden;
+    transition: height 0.2s ease;
+
+    /* */
+    display: inline-block;
+    margin: 8px;
+    vertical-align: top;
+}
+    .profile:hover {
+        cursor: pointer;
+    }
+    .profile.profile--expanded {
+        height: 240px;
+        animation: expand 0.7s ease;
+    }
+    .profile__banner {
+        display: block;
+        height: 70px;
+        width: 100%;
+        background-color: rgb(175, 105, 175);
+        border-top-right-radius: inherit;
+        border-top-left-radius: inherit;
+    }
+    .profile__pic {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 20px;
+    }
+        .profile__pic img {
+            background-color: var(--primary-bg);
+            border-radius: 50%;
+            height: 80px;
+            width: 80px;
+            padding: 3px;
+            object-fit: cover;
+        }
+    .profile__info {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 104px;
+    }
+        .profile__info-display, .profile__info-username {
+            display: block;
+            width: 100%;
+        }
+        .profile__info-display {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .profile__info-username {
+            color: var(--gray-text);
+        }
+    .profile__data {
+        opacity: 0;
+    }
+        .profile--unexpanded > .profile__data, .profile--expanded > .profile__data {
+            width: 100%;
+            text-align: center;
+            padding-top: inherit;
+            height: 66px;
+            position: absolute;
+            top: 168px;
+
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+        }
+        .profile--unexpanded > .profile__data {
+            opacity: 0;
+            animation: unreveal 0.2s ease;
+        }
+        .profile--expanded > .profile__data {
+            opacity: 1;
+            animation: reveal 0.7s ease;
+        }
+        .profile__data > * > * {
+            display: block;
+        }
+        .profile__data > * > *:first-child {
+            font-size: 0.91rem;
+            font-weight: bold;
+        }
+        .profile__data > * > *:nth-child(2) {
+            font-size: 0.9rem;
+        }
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes unreveal {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+@keyframes expand {
+    0% {
+        height: 180px;
+    }
+    100% {
+        height: 240px;
+    }
+}
+@keyframes unexpand {
+    0% {
+        height: 240px;
+    }
+    100% {
+        height: 180px;
+    }
+}
+
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:300');
+  </style>
+  <div id="home"></div>
+
+  <div id="small-screen-nav">
+    <div id="close"></div>
+    <ul class="ul">
+      <li class="li">
+
+
+        <a class="a" href="#edu">Education</a>
+        <a class="a" href="#blog">Blogs</a>
+        <a class="a" href="#photos">Photo Gallary</a>
+        <a class="a" href="tel:8329083210">Call Me</a>
+      </li>
+      </li>
+    </ul>
+  </div>
+
+  <div id="container1">
+    <ul class="ul">
+      <li class="li">
+
+
+        <a class="a" href="#edu">Education</a>
+        <a class="a" href="#blog">Blogs</a>
+        <a class="a" href="#photos">Photo Gallary</a>
+        <a class="a" href="tel:8329083210">Call Me</a>
+      </li>
+    </ul>
+    <div id="nav-icon"></div>
+  </div>
+
+
+
+  <br><br>
+  <center>
+
+    <div class="div">RUSHIKESH
+      <span>JAGTAP </span>
+    </div>
+
+
+    <br><br>
+    <h5 class="h5">I am a
+      <span class="txt-rotate" data-period="2000" data-rotate='[ "Graphics Designer..." ]'></span>
+    </h5>
+
+  </center>
+  <br>
+
+  <div class="container">
+    <h2 style="color: aqua;" id="edu">EDUCATION</h2><br>
+    <div class="row">
+      <div class="col-lg-12 ">
+        <div class="card">
+          <div class="card-body ">
+            <div class="hori-timeline" dir="ltr ">
+              <ul class="list-inline events">
+                <li class="li">
+                  <div class="px-4">
+                    <div class="event-date bg-soft-primary text-primary" style="font-size: 1600%;">August 2022 - Till
+                    </div>
+                    <h3 class="font-size-16">Diploma in Computer Science</h3>
+                    <a href="https://www.spitpolytechnic.com/">
+                      <h6 class="font-size-16">(Sanjeevani Pratishthan Polytechnic , Shirur)</h6>
+                    </a><br>
+
+                  </div>
+                  <div class="px-4">
+                    <div class="event-date bg-soft-primary text-primary" style="font-size: 1600%;">August 2019 - 2022
+                    </div>
+                    <h3 class="font-size-16">Bachelor in COMMERCE</h3>
+                    <a href="https://www.ctboracollege.edu.in/">
+                      <h6 class="font-size-16">(C.T.Bora College , Shirur)</h6>
+                    </a><br>
+
+                  </div>
+                </li>
+                <li class="li">
+                  <div class="px-4">
+                    <div class="event-date bg-soft-primary text-primary" style="font-size: 1600%;">May 2017 - May 2019
+                    </div>
+                    <h3 class="font-size-16">Higher Secondary - 12TH</h3>
+                    <a href="https://schools.org.in/pune/27251210530/suraykant-palande-junner-collage-sei-shirur.html">
+                      <h6 class="font-size-16">(Vidyadham Junior College , Shirur Pune)</h6>
+                    </a><br>
+
+                  </div>
+                </li>
+                <li class="li">
+                  <div class="px-4">
+                    <div class="event-date bg-soft-primary text-primary" style="font-size: 1600%;">May 2016 - June 2017
+                    </div>
+                    <h3 class="font-size-16">Secondary School - 10TH</h3>
+                    <a href="https://www.facebook.com/vdsmemories/about">
+                      <h6 class="font-size-16">(Vidyadham Prashala , Shirur Pune)</h6>
+                    </a> <br>
+
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <br>
+
+  </div>
+
+  <br><br>
+
+  <div class="container">
+    <h2 style="color: aqua;" id="blog">TRAVEL BLOGS</h2><br><br>
+    <div class="row">
+      <div class="col-sm"><a class="event">
+          <img src="https://hindi.holidayrider.com/wp-content/uploads/2019/08/compressed-rqmg.jpg"
+            style="height: 900%; width:100%;" alt="description" />
+
+          <div class="content">
+            <h3 style="color: black;">RAJGAD FORT</h3>
+
+            <div class="rollover">
+              <p style="color: black;">Rajgad Fort is Situated near Pune , India. It was the the first Capital of
+                Maratha Empire.</p>
+              <button type="button" class="btn btn-outline-dark"
+                onclick=window.location.href="https://rushikeshjagtapgallery.blogspot.com/2023/02/rajgad-fort-trekking.html">Visit
+                Blog</button>
+
+            </div>
+
+          </div>
+        </a></div>
+      <div class="col-sm"><a class="event">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/Lohagad_fort_20170802171542.jpg"
+            style="height: 800%; width:100%;" alt="description" />
+
+          <div class="content">
+            <h3 style="color: black;">Lohgad fort , Lonawala</h3>
+
+            <div class="rollover">
+              <p style="color: black;">Lohgad fort is the perrfect destination for trekkers which is upto 3000ft. above
+                from sea level.
+              </p>
+              <button type="button" class="btn btn-outline-dark"
+                onclick=window.location.href="https://rushikeshjagtapgallery.blogspot.com/2023/02/lohgad-fort-trekking.html">Visit
+                Blog</button>
+            </div>
+          </div>
+        </a></div>
+      <div class="col-sm"><a class="event">
+          <img
+            src="https://gumlet.assettype.com/swarajya%2F2021-12%2F2d33bb09-ed58-4964-ba24-457617e8128a%2F232A4609_min.jpg?format=auto"
+            style="height: 800%; width:100%;" alt="description" />
+
+          <div class="content">
+            <h3 style="color: black;">SINHGAD FORT</h3>
+
+            <div class="rollover">
+              <p style="color: black;">Sinhgad(Kondhana). It is situated near to Pune. Shivaji Maharaj fought a battle
+                here along with Mughal
+                army.</p>
+              <button type="button" class="btn btn-outline-dark"
+                onclick=window.location.href="https://rushikeshjagtapgallery.blogspot.com/2023/02/sinhgad-fort-battle-of-tanhaji.html">Visit
+                Blog</button>
+            </div>
+          </div>
+        </a></div>
+    </div><br><br><br>
+
+
+
+
+
+  </div>
+
+  <div class="container">
+    <h2 style="color: aqua;" id="photos">Photo Gallary</h2><br><br>
+    <div class="row">
+      <div class="col-sm-6"><a class="event">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZ_XeJJHroqiQ0Go522ngrI-V3RvMKPqDoT54vH51SGtLknNu2tQ3pGasv_82h7KJYLymKQ8JvMzwluvwlImQ9jqhEpabv-a9qSm5Rv-wSgvvTZsemiABoEdkVFAFfy8eOrjNSrbynWdEuzATXQcT8-QpQdoPm740O2DdlR4ZvjQyZFUcby_HhxfcKNA/w526-h428/IMG_20230207_080549_887.jpg"
+            style="height: 800%; width:100%;" alt="description" />
+
+          <div class="content">
+            <h3 style="color: black;">Images From Blogs</h3>
+
+            <div class="rollover">
+              <p style="color: black;"></p>
+              <button type="button" class="btn btn-outline-dark"
+                onclick=window.location.href="https://rushikeshjagtapgallery.blogspot.com/2023/02/rushikesh-jagtap-photo-gallery.html">See
+                Images
+              </button>
+
+            </div>
+
+          </div>
+        </a></div>
+      <div class="col-sm-6"><a class="event">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZ_XeJJHroqiQ0Go522ngrI-V3RvMKPqDoT54vH51SGtLknNu2tQ3pGasv_82h7KJYLymKQ8JvMzwluvwlImQ9jqhEpabv-a9qSm5Rv-wSgvvTZsemiABoEdkVFAFfy8eOrjNSrbynWdEuzATXQcT8-QpQdoPm740O2DdlR4ZvjQyZFUcby_HhxfcKNA/w526-h428/IMG_20230207_080549_887.jpg"
+            style="height: 800%; width:100%;" alt="description" />
+
+          <div class="content">
+            <h3 style="color: black;">Images From Instagram</h3>
+
+            <div class="rollover">
+              <p style="color: black;">
+              </p>
+              <button type="button" class="btn btn-outline-dark"
+                onclick=window.location.href="https://www.instagram.com/_mr__rushi55/">See Images
+              </button>
+            </div>
+          </div>
+        </a></div>
+      
+    </div><br><br><br>
+   
+
+
+<div class="container">
+  <h2 style="color: aqua;" id="photos">Connect Me</h2><br><br>
+<center>
+  <div class="profile" onclick="expand(this)">
+    <div class="profile__banner" style="background-color: rgb(255, 255, 255);"></div>
+    <div>
+        <div class="profile__pic">
+            <img src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Click Me">
+        </div>
+        <div class="profile__info">
+            <span class="profile__info-display">Rushikesh Jagtap</span>
+            <span class="profile__info-username">My Information</span>
+        </div>
+    </div>
+    <div class="profile__data">
+        <span class="profile__data-following">
+            <span class="profile__data-following-number">22</span>
+            <span class="profile__data-following-label">Age</span>
+        </span>
+        <span class="profile__data-followers">
+            <span class="profile__data-followers-number">Shirur</span>
+            <span class="profile__data-following-label">City</span>
+        </span>
+        <span class="profile__data-likes">
+            <span class="profile__data-likes-number">8329083210</span>
+            <span class="profile__data-likes-label" type="contact
+            ">Contact</span>
+        </span>
+       
+    </div>
+    
+</div>
+<div class="profile" onclick="expand(this)">
+  <div class="profile__banner" style="background-color: rgb(255, 255, 255);"></div>
+  <div>
+      <div class="profile__pic">
+          <img src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Click Me">
+      </div>
+      <div class="profile__info">
+          <span class="profile__info-display">Rushikesh Jagtap</span>
+          <span class="profile__info-username">Social Media</span>
+      </div>
+  </div>
+  <div class="profile__data">
+      <span class="profile__data-following">
+          <span class="profile__data-following-number">8329083210</span>
+          <span class="profile__data-following-label">Whatsapp Number</span>
+      </span>
+      <span class="profile__data-followers">
+          <span class="profile__data-followers-number">
+            _mr__rushi55</span>
+          <span class="profile__data-following-label">Instagram</span>
+      </span>
+      <span class="profile__data-likes">
+          <span class="profile__data-likes-number">rushikesh_j9860</span>
+          <span class="profile__data-likes-label" type="contact
+          ">Snapchat</span>
+      </span>
+      <!-- <span class="profile__data-likes">
+        <span class="profile__data-likes-number">Rushikesh
+          <a href="https://www.instagram.com/_mr__rushi55/"></a> </span>
+        <span class="profile__data-likes-label" type="contact
+        ">Instagram</span>
+    </span> -->
+  </div>
+  
+</div>
+</center>
+</div><br><br>  
+<center>
+  <a class="btn btn-outline-light btn-floating m-1" href="#home" role="button">GO TO TOP</i></a>
+
+</center>
+  </div>
+
+
+
+
+
+
+  <br>
+  <footer class="bg-dark text-center text-white">
+    <br>
+
+      <section class="mb-4">
+        <p style="font-size: large;">
+          Thank You..! Keep Supporting
+
+        </p>
+        <p style="font-size: large;">
+          RUSHIKESH JAGTAP
+
+        </p>
+      </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright issued: Rushikesh Jagtap
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
+  <script>
+
+    var TxtRotate = function (el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = "";
+      this.tick();
+      this.isDeleting = false;
+    };
+
+    TxtRotate.prototype.tick = function () {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+
+      this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+
+      var that = this;
+      var delta = 300 - Math.random() * 100;
+
+      if (this.isDeleting) {
+        delta /= 2;
+      }
+
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === "") {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+      }
+
+      setTimeout(function () {
+        that.tick();
+      }, delta);
+    };
+
+    window.onload = function () {
+      var elements = document.getElementsByClassName("txt-rotate");
+      for (var i = 0; i < elements.length; i++) {
+        var toRotate = elements[i].getAttribute("data-rotate");
+        var period = elements[i].getAttribute("data-period");
+        if (toRotate) {
+          new TxtRotate(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+      // INJECT CSS
+      var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+      document.body.appendChild(css);
+    };
+    let camera_button = document.querySelector("#start-camera");
+    let video = document.querySelector("#video");
+    let click_button = document.querySelector("#click-photo");
+    let canvas = document.querySelector("#canvas");
+
+    camera_button.addEventListener('click', async function () {
+      let stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+      video.srcObject = stream;
+    });
+
+    click_button.addEventListener('click', function () {
+      canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+      let image_data_url = canvas.toDataURL('image/jpeg');
+
+      // data url of the image
+      console.log(image_data_url);
+    });
+    function expand(card) {
+            card.classList.toggle('profile--expanded');
+
+            // If card is not expanded after toggle, add 'unexpanded' class
+            if (!card.classList.contains('profile--expanded')) card.classList.toggle('profile--unexpanded');
+            // Else if card is expanded after toggle and still contains 'unexpanded' class, remove 'unexpanded'
+            else if (card.classList.contains('profile--expanded') && card.classList.contains('profile--unexpanded')) card.classList.toggle('profile--unexpanded');
+        }
+
+        function toggleTheme() {
+            let docu = document.querySelector('html');
+
+            docu.classList.toggle('light-theme');
+            docu.classList.toggle('dark-theme');
+        }
+  </script>
+</body>
+
+</html>
